@@ -1,0 +1,48 @@
+{
+  "name": "webpack-watch-server",
+  "version": "1.0.0",
+  "description": "A single NPM script command that starts Webpack in watch mode and restarts your server each build, in a unified console.",
+  "license": "MIT",
+  "author": {
+    "name": "Jayden Seric",
+    "email": "me@jaydenseric.com",
+    "url": "http://jaydenseric.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaydenseric/webpack-watch-server.git"
+  },
+  "homepage": "https://github.com/jaydenseric/webpack-watch-server#readme",
+  "bugs": "https://github.com/jaydenseric/webpack-watch-server/issues",
+  "keywords": [
+    "webpack",
+    "watch",
+    "server"
+  ],
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "fined": "^1.0.2",
+    "indent-string": "^3.1.0",
+    "liftoff": "^2.3.0"
+  },
+  "peerDependencies": {
+    "webpack": "2.x"
+  },
+  "devDependencies": {
+    "standard": "^9.0.2"
+  },
+  "scripts": {
+    "lint": "standard",
+    "prepublish": "npm run lint"
+  },
+  "main": "index.js",
+  "bin": {
+    "webpack-watch-server": "./bin/webpack-watch-server.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "engines": {
+    "node": ">=6.4"
+  }
+}
