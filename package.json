@@ -1,7 +1,7 @@
 {
   "name": "webpack-watch-server",
   "version": "1.0.0",
-  "description": "A single NPM script command that starts Webpack in watch mode and restarts your server each build, in a unified console.",
+  "description": "A single NPM script command to start Webpack and your server in watch mode, with a unified console.",
   "license": "MIT",
   "author": {
     "name": "Jayden Seric",
