@@ -3,6 +3,11 @@
 ## next
 
 - Removed the redundant `fined` dependency.
+- Improved logging.
+  - Console clears each server start.
+  - More compact with less whitespace.
+  - Log color changed from white to default, improving legibility in consoles with white backgrounds.
+  - Removed Webpack build info; no one cares in dev mode.
 
 ## 1.1.0-alpha.1
 

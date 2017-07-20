@@ -3,7 +3,6 @@
 // eslint-disable-next-line node/no-missing-require
 const webpack = require('webpack')
 const Liftoff = require('liftoff')
-const indentString = require('indent-string')
 const chalk = require('chalk')
 const { spawn } = require('child_process')
 
@@ -19,7 +18,7 @@ const WebpackWatchServer = new Liftoff({
 
 function invoke(env) {
   if (!env.configPath) {
-    console.error(chalk.red('Webpack config file not found.'))
+    process.stdout.write(chalk.red('Webpack config file not found.'))
     process.exitCode = 1
     return
   }
@@ -37,9 +36,9 @@ function invoke(env) {
   try {
     var outputPath = webpackConfig.output.path
   } catch (error) {
-    console.error(
+    process.stdout.write(
       chalk.red(
-        'Webpack config file export must include ‘output.path’. Note only a plain object config is supported.'
+        'Webpack config file must export an object containing ‘output.path’.'
       )
     )
     process.exitCode = 1
@@ -47,22 +46,13 @@ function invoke(env) {
   }
 
   let serverProcess
-  let wasServerMessage
 
   function startServer() {
     serverProcess = spawn('node', [outputPath])
-    serverProcess.stdout.on('data', data => {
-      console.log(
-        (wasServerMessage ? '' : '\n') + indentString(chalk.white(data), 4)
-      )
-      wasServerMessage = true
-    })
-    serverProcess.stderr.on('data', data => {
-      console.error(
-        (wasServerMessage ? '' : '\n') + indentString(chalk.red(data), 4)
-      )
-      wasServerMessage = true
-    })
+    serverProcess.stdout.on('data', data => process.stdout.write(data))
+    serverProcess.stderr.on('data', data =>
+      process.stdout.write(chalk.red(data))
+    )
   }
 
   function stopServer() {
@@ -71,11 +61,12 @@ function invoke(env) {
 
   const compiler = webpack(webpackConfig)
   const watcher = compiler.watch({}, (errors, stats) => {
-    const hasErrors = errors || stats.hasErrors()
-    console[hasErrors ? 'error' : 'log'](stats.toString('minimal'))
-    wasServerMessage = false
     stopServer()
-    if (!hasErrors) startServer()
+    // Clear the console
+    process.stdout.write('\x1Bc')
+    if (errors || stats.hasErrors())
+      process.stdout.write(stats.toString('errors-only') + '\n')
+    else startServer()
   })
 
   function exit() {
