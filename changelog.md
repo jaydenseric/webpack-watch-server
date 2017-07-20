@@ -1,6 +1,6 @@
 # webpack-watch-server change log
 
-## next
+## 1.1.0-alpha.1
 
 - Updated dependencies.
 - Support `webpack@3`.
