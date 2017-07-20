@@ -20,7 +20,8 @@ const WebpackWatchServer = new Liftoff({
 function invoke(env) {
   if (!env.configPath) {
     console.error(chalk.red('Webpack config file not found.'))
-    process.exit(1)
+    process.exitCode = 1
+    return
   }
 
   // Import webpack config
@@ -41,7 +42,8 @@ function invoke(env) {
         'Webpack config file export must include ‘output.path’. Note only a plain object config is supported.'
       )
     )
-    process.exit(1)
+    process.exitCode = 1
+    return
   }
 
   let serverProcess

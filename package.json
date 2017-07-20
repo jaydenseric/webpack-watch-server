@@ -64,7 +64,6 @@
     ],
     "rules": {
       "no-console": "off",
-      "no-process-exit": "off",
       "no-extra-semi": "off",
       "prettier/prettier": [
         "error",
