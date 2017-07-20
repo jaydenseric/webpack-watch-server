@@ -11,13 +11,17 @@ By using a Webpack build callback under the hood, this package is much more effi
 
 ## Install
 
-run `npm install webpack-watch-server --save-dev` for [NPM](https://www.npmjs.com) or `yarn add webpack-watch-server --dev` for [Yarn](https://yarnpkg.com).
+With [npm](https://www.npmjs.com):
+
+```
+npm install webpack-watch-server
+```
 
 ## Usage
 
 Add `"dev": "webpack-watch-server"` to your package.json scripts.
 
-Run `npm run dev` or `yarn run dev` to start Webpack in watch mode. The server automatically starts and restarts after each build.
+Run `npm run dev` to start Webpack in watch mode. The server automatically starts and restarts after each build.
 
 ## Caveats
 
