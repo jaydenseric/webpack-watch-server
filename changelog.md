@@ -1,5 +1,9 @@
 # webpack-watch-server change log
 
+## next
+
+- Removed the redundant `fined` dependency.
+
 ## 1.1.0-alpha.1
 
 - Updated dependencies.

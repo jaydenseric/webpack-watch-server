@@ -21,7 +21,6 @@
   ],
   "dependencies": {
     "chalk": "^2.0.1",
-    "fined": "^1.1.0",
     "indent-string": "^3.1.0",
     "liftoff": "^2.3.0"
   },
