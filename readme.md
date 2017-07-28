@@ -23,6 +23,8 @@ Add `"dev": "webpack-watch-server"` to your package.json scripts.
 
 Run `npm run dev` to start Webpack in watch mode. The server automatically starts and restarts after each build.
 
+Use `webpack-watch-server --config my-custom-config.js` to specify an alternative webpack config.
+
 ## Caveats
 
 - It is assumed your server file is the default Node finds at the Webpack config `output.path` – `index.js` works.

@@ -6,6 +6,8 @@ const Liftoff = require('liftoff')
 const chalk = require('chalk')
 const { spawn } = require('child_process')
 
+var argv = require('minimist')(process.argv.slice(2))
+
 const WebpackWatchServer = new Liftoff({
   name: 'webpack-watch-server',
   configName: 'webpack',
@@ -84,4 +86,9 @@ function invoke(env) {
   ].forEach(event => process.on(event, exit))
 }
 
-WebpackWatchServer.launch({}, invoke)
+WebpackWatchServer.launch(
+  {
+    configPath: argv.config
+  },
+  invoke
+)
