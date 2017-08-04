@@ -89,7 +89,8 @@ function invoke(env) {
 
 WebpackWatchServer.launch(
   {
-    configPath: args.config
+    configPath: args.config,
+    require: args.require
   },
   invoke
 )

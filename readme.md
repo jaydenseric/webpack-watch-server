@@ -21,7 +21,7 @@ npm install webpack-watch-server
 
 Add `"dev": "webpack-watch-server"` to your package.json scripts.
 
-Use `webpack-watch-server --config my-custom-config.js` to specify a custom Webpack config file path.
+Use `webpack-watch-server --config my-custom-config.js` to specify a custom Webpack config file path. If you need to provide a compiler for the config file, use `webpack-watch-server --config my-custom-config.babel.js --require babel-register`.
 
 Run `npm run dev` to start Webpack in watch mode. The server automatically starts and restarts after each build.
 
