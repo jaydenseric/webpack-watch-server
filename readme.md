@@ -19,9 +19,8 @@ npm install webpack-watch-server
 
 ## Usage
 
-Add `"dev": "webpack-watch-server"` to your package.json scripts.
-
-Run `npm run dev` to start Webpack in watch mode. The server automatically starts and restarts after each build.
+1. Add `"dev": "webpack-watch-server"` to your `package.json` scripts. To specify a custom Webpack config file path use `webpack-watch-server --config path/to/custom-webpack-config.js`. The file will be transpiled with Babel if it’s name ends with `.config.babel.js`.
+2. Run `npm run dev` to start Webpack in watch mode. The server automatically starts and restarts after each build.
 
 ## Caveats
 

@@ -2,9 +2,12 @@
 
 // eslint-disable-next-line node/no-missing-require
 const webpack = require('webpack')
+const minimist = require('minimist')
 const Liftoff = require('liftoff')
 const chalk = require('chalk')
 const { spawn } = require('child_process')
+
+const args = minimist(process.argv.slice(2))
 
 const WebpackWatchServer = new Liftoff({
   name: 'webpack-watch-server',
@@ -84,4 +87,4 @@ function invoke(env) {
   ].forEach(event => process.on(event, exit))
 }
 
-WebpackWatchServer.launch({}, invoke)
+WebpackWatchServer.launch({ configPath: args.config }, invoke)

@@ -21,7 +21,8 @@
   ],
   "dependencies": {
     "chalk": "^2.0.1",
-    "liftoff": "^2.3.0"
+    "liftoff": "^2.3.0",
+    "minimist": "^1.2.0"
   },
   "peerDependencies": {
     "webpack": "^2 || ^3"
