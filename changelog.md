@@ -4,6 +4,10 @@
 
 - Updated dependencies.
 - Added a new `--config` CLI argument for a custom Webpack config file path, via [#1](https://github.com/jaydenseric/webpack-watch-server/pull/1).
+- Improved console messages.
+  - There is a persistent instruction for exiting.
+  - Events such as the Webpack config loading, Webpack compiling and the server starting are logged.
+  - Webpack compiles and server starts are numbered.
 
 ## 1.1.0
 
