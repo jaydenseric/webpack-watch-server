@@ -87,10 +87,4 @@ function invoke(env) {
   ].forEach(event => process.on(event, exit))
 }
 
-WebpackWatchServer.launch(
-  {
-    configPath: args.config,
-    require: args.require
-  },
-  invoke
-)
+WebpackWatchServer.launch({ configPath: args.config }, invoke)
