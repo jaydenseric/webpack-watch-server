@@ -1,6 +1,6 @@
 # webpack-watch-server change log
 
-## next
+## 1.2.0
 
 - Updated dependencies.
 - Added a new `--config` CLI argument for a custom Webpack config file path, via [#1](https://github.com/jaydenseric/webpack-watch-server/pull/1).

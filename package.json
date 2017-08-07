@@ -1,6 +1,6 @@
 {
   "name": "webpack-watch-server",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A single NPM script command to start Webpack and your server in watch mode, with a unified console.",
   "license": "MIT",
   "author": {
