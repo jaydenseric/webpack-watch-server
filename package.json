@@ -28,7 +28,7 @@
     "webpack": "^2 || ^3"
   },
   "devDependencies": {
-    "eslint": "^4.2.0",
+    "eslint": "^4.4.0",
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-prettier": "^2.1.2",
     "husky": "^0.14.3",
