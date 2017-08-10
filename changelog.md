@@ -3,6 +3,7 @@
 ## next
 
 - Added a cool demo GIF to the readme.
+- Corrected “npm” capitalization in the package description.
 
 ## 1.2.0
 
