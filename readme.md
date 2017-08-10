@@ -9,6 +9,8 @@ A single `webpack-watch-server` command to add to your package scripts that fire
 
 By using a Webpack build callback under the hood, this package is much more efficient than using a seperate watcher (such as [Nodemon](https://nodemon.io) or [Forever](https://github.com/foreverjs/forever)) to restart the server.
 
+<img src="demo.gif" width="500" alt="webpack-watch-server demo" />
+
 ## Install
 
 With [npm](https://www.npmjs.com):

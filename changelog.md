@@ -1,5 +1,9 @@
 # webpack-watch-server change log
 
+## next
+
+- Added a cool demo GIF to the readme.
+
 ## 1.2.0
 
 - Updated dependencies.
