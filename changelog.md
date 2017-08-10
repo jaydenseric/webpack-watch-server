@@ -2,6 +2,7 @@
 
 ## next
 
+- Updated dependencies.
 - Added a cool demo GIF to the readme.
 - Corrected “npm” capitalization in the package description.
 
