@@ -41,6 +41,7 @@ function invoke(env) {
 
   try {
     var outputPath = webpackConfig.output.path
+    var filename = webpackConfig.output.filename
   } catch (error) {
     logError('Webpack config file must export an object with ‘output.path’.')
     process.exitCode = 1
@@ -55,7 +56,9 @@ function invoke(env) {
     serverStartCount++
     clearConsole()
     logInfo(`Server start ${serverStartCount}…`)
-    serverProcess = spawn('node', [outputPath])
+    serverProcess = spawn('node', [
+      [outputPath, filename].filter(p => p).join('')
+    ])
     serverProcess.stdout.on('data', data => process.stdout.write(data))
     serverProcess.stderr.on('data', logError)
   }
