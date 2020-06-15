@@ -1,6 +1,6 @@
 # webpack-watch-server
 
-[![npm version](https://badgen.net/npm/v/webpack-watch-server)](https://npm.im/webpack-watch-server)
+[![npm version](https://badgen.net/npm/v/webpack-watch-server)](https://npm.im/webpack-watch-server) [![CI status](https://github.com/jaydenseric/webpack-watch-server/workflows/CI/badge.svg)](https://github.com/jaydenseric/webpack-watch-server/actions)
 
 A single `webpack-watch-server` command to add to your package scripts that fires up [Webpack](https://webpack.js.org) in watch mode and restarts your server each build. Webpack and server logs stream in a unified console with clear formatting and pretty colors.
 

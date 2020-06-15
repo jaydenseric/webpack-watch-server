@@ -19,6 +19,7 @@
 - Updated readme badges.
 - Updated readme install section.
 - Updated EditorConfig.
+- Setup GitHub Actions CI.
 
 ## 1.2.1
 
