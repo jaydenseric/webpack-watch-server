@@ -8,12 +8,12 @@ By using a Webpack build callback under the hood, this package is much more effi
 
 <img src="demo.gif" width="500" alt="webpack-watch-server demo" />
 
-## Install
+## Setup
 
-With [npm](https://www.npmjs.com):
+To install from [npm](https://www.npmjs.com/get-npm) run:
 
-```
-npm install webpack-watch-server
+```sh
+npm install webpack-watch-server --save-dev
 ```
 
 ## Usage
@@ -28,4 +28,4 @@ npm install webpack-watch-server
 
 ## Support
 
-- Node >= 6.4.
+- Node.js `^10.17.0 || ^12.0.0 || >= 13.7.0`.

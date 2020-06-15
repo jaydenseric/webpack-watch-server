@@ -17,6 +17,7 @@
 - Removed `package-lock.json` from `.gitignore` as it has been disabled via `.npmrc`.
 - Changed the readme heading 1 to match the package name.
 - Updated readme badges.
+- Updated readme install section.
 - Updated EditorConfig.
 
 ## 1.2.1
