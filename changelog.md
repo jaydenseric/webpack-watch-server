@@ -5,6 +5,7 @@
 ### Patch
 
 - Updated package metadata.
+- Updated readme badges.
 - Updated EditorConfig.
 
 ## 1.2.1

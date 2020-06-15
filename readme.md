@@ -1,9 +1,6 @@
 # Webpack watch server
 
-![npm version](https://img.shields.io/npm/v/webpack-watch-server.svg?style=flat-square)
-![Licence](https://img.shields.io/npm/l/webpack-watch-server.svg?style=flat-square)
-![Github issues](https://img.shields.io/github/issues/jaydenseric/webpack-watch-server.svg?style=flat-square)
-![Github stars](https://img.shields.io/github/stars/jaydenseric/webpack-watch-server.svg?style=flat-square)
+[![npm version](https://badgen.net/npm/v/webpack-watch-server)](https://npm.im/webpack-watch-server)
 
 A single `webpack-watch-server` command to add to your package scripts that fires up [Webpack](https://webpack.js.org) in watch mode and restarts your server each build. Webpack and server logs stream in a unified console with clear formatting and pretty colors.
 
