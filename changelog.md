@@ -2,10 +2,18 @@
 
 ## Next
 
+### Major
+
+- Updated the supported Node.js versions to `^10.17.0 || ^12.0.0 || >= 13.7.0`.
+- Updated dependencies, some of which require newer Node.js versions than were previously supported.
+
 ### Patch
 
 - Removed the [`husky`](https://npm.im/husky) dev dependency and the `precommit` package script.
+- New linting related config and package test scripts.
 - Updated package metadata.
+- Use strict mode for scripts.
+- Added JSDoc to the source.
 - Updated readme badges.
 - Updated EditorConfig.
 

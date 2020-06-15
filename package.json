@@ -24,47 +24,30 @@
     "webpack-watch-server": "./bin/webpack-watch-server.js"
   },
   "engines": {
-    "node": ">=6.4"
+    "node": "^10.17.0 || ^12.0.0 || >= 13.7.0"
+  },
+  "peerDependencies": {
+    "webpack": "^2 || ^3"
   },
   "dependencies": {
     "chalk": "^2.1.0",
     "liftoff": "^2.3.0",
     "minimist": "^1.2.0"
   },
-  "peerDependencies": {
-    "webpack": "^2 || ^3"
-  },
   "devDependencies": {
-    "eslint": "^4.4.1",
-    "eslint-plugin-node": "^5.1.1",
-    "eslint-plugin-prettier": "^2.1.2",
-    "prettier": "^1.5.3"
+    "eslint": "^7.2.0",
+    "eslint-config-env": "^14.0.3",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsdoc": "^27.0.7",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5"
   },
   "scripts": {
-    "lint": "eslint .",
-    "prepublishOnly": "npm run lint"
-  },
-  "eslintConfig": {
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "eslint:recommended",
-      "plugin:node/recommended"
-    ],
-    "plugins": [
-      "node",
-      "prettier"
-    ],
-    "rules": {
-      "no-extra-semi": "off",
-      "prettier/prettier": [
-        "error",
-        {
-          "semi": false,
-          "singleQuote": true
-        }
-      ]
-    }
+    "test": "npm run test:eslint && npm run test:prettier",
+    "test:eslint": "eslint .",
+    "test:prettier": "prettier -c .",
+    "prepublishOnly": "npm test"
   }
 }

@@ -1,1 +1,3 @@
-module.exports = require('./package')
+'use strict';
+
+module.exports = require('./package');
