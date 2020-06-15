@@ -1,5 +1,11 @@
 # webpack-watch-server change log
 
+## Next
+
+### Patch
+
+- Updated EditorConfig.
+
 ## 1.2.1
 
 - Updated dependencies.
