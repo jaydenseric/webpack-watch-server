@@ -14,6 +14,7 @@
 - Updated package metadata.
 - Use strict mode for scripts.
 - Added JSDoc to the source.
+- Removed `package-lock.json` from `.gitignore` as it has been disabled via `.npmrc`.
 - Updated readme badges.
 - Updated EditorConfig.
 
