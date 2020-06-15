@@ -11,6 +11,7 @@
   "repository": "github:jaydenseric/webpack-watch-server",
   "homepage": "https://github.com/jaydenseric/webpack-watch-server#readme",
   "bugs": "https://github.com/jaydenseric/webpack-watch-server/issues",
+  "funding": "https://github.com/sponsors/jaydenseric",
   "keywords": [
     "webpack",
     "watch",

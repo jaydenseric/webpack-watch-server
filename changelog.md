@@ -7,6 +7,10 @@
 - Updated the supported Node.js versions to `^10.17.0 || ^12.0.0 || >= 13.7.0`.
 - Updated dependencies, some of which require newer Node.js versions than were previously supported.
 
+### Minor
+
+- Setup GitHub Sponsors for funding.
+
 ### Patch
 
 - Removed the [`husky`](https://npm.im/husky) dev dependency and the `precommit` package script.
