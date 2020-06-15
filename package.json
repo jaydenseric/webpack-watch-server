@@ -6,12 +6,9 @@
   "author": {
     "name": "Jayden Seric",
     "email": "me@jaydenseric.com",
-    "url": "http://jaydenseric.com"
+    "url": "https://jaydenseric.com"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jaydenseric/webpack-watch-server.git"
-  },
+  "repository": "github:jaydenseric/webpack-watch-server",
   "homepage": "https://github.com/jaydenseric/webpack-watch-server#readme",
   "bugs": "https://github.com/jaydenseric/webpack-watch-server/issues",
   "keywords": [
@@ -19,6 +16,16 @@
     "watch",
     "server"
   ],
+  "files": [
+    "bin"
+  ],
+  "main": "index.js",
+  "bin": {
+    "webpack-watch-server": "./bin/webpack-watch-server.js"
+  },
+  "engines": {
+    "node": ">=6.4"
+  },
   "dependencies": {
     "chalk": "^2.1.0",
     "liftoff": "^2.3.0",
@@ -38,16 +45,6 @@
     "lint": "eslint .",
     "prepublishOnly": "npm run lint",
     "precommit": "npm run lint"
-  },
-  "main": "index.js",
-  "bin": {
-    "webpack-watch-server": "./bin/webpack-watch-server.js"
-  },
-  "files": [
-    "bin"
-  ],
-  "engines": {
-    "node": ">=6.4"
   },
   "eslintConfig": {
     "env": {

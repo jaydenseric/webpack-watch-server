@@ -4,6 +4,7 @@
 
 ### Patch
 
+- Updated package metadata.
 - Updated EditorConfig.
 
 ## 1.2.1
