@@ -4,6 +4,7 @@
 
 ### Patch
 
+- Removed the [`husky`](https://npm.im/husky) dev dependency and the `precommit` package script.
 - Updated package metadata.
 - Updated readme badges.
 - Updated EditorConfig.
