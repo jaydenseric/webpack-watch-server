@@ -15,6 +15,7 @@
 - Use strict mode for scripts.
 - Added JSDoc to the source.
 - Removed `package-lock.json` from `.gitignore` as it has been disabled via `.npmrc`.
+- Changed the readme heading 1 to match the package name.
 - Updated readme badges.
 - Updated EditorConfig.
 

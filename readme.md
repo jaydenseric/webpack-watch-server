@@ -1,4 +1,4 @@
-# Webpack watch server
+# webpack-watch-server
 
 [![npm version](https://badgen.net/npm/v/webpack-watch-server)](https://npm.im/webpack-watch-server)
 
